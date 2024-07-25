@@ -13,10 +13,9 @@ return new class extends Migration
     {
         Schema::create('registers', function (Blueprint $table) {
             $table->id();
-
-            //FK user
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->string('name', 20);
+            $table->string('surname', 60);
+            $table->string('email')->unique();
 
             //FK courses
             $table->unsignedBigInteger('course_id');
