@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Irish Grove';
+    src: url("{{URL::asset('fonts/IrishGrover-Regular.ttf')}}") format('ttf'),;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgArrow{
+    width: 300px;
+    height: 300px;
+}
+
+/* --- Nav bar --- */
+#nav{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 155px;
+    height: 105vh;
+    background-color: #FF9114;
+    display: flex;
+    justify-content: center;
+ }
+
+ .logoNav{
+    margin-top: 20px;
+ }
+
+
+/* --- BODY --- */
+
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    font-family: 'Irish Grover', 'Courier New', Courier, monospace;
+    background-color: #91ED58;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2{
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text{
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #FF9114;
+}
+
+.form{
+    background-color: #FF9114;
+    border-radius: 15px;
+    width: 330px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.section{
+    width: 25%;
+}
+
+.formSection{
+    margin-top: 5%;
+    width: 45%;
+}
+
+input{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    border: solid white;
+    border-top: 10px;
+    border-bottom: 10px;
+}
+
+.input{
+    width: 80%;
+    height: 30px;
+}
+
+.inputName{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.inputButton{
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    background-color: #FFFA69;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 50px;
+}
