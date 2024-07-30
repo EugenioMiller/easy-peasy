@@ -1,128 +1,90 @@
+/*
+    Fuentes: bukhari script y bebas nueu
+*/
 @font-face {
-    font-family: 'Irish Grove';
-    src: url("{{URL::asset('fonts/IrishGrover-Regular.ttf')}}") format('ttf'),;
+    font-family: 'Bukhari';
+    src: url("{{URL::asset('fonts/Bukhari-Script.ttf')}}") format('ttf'),;
     font-style: normal;
     font-weight: normal;
 }
-
-.container{
-    display: flex;
-    justify-content: space-between;
+body{
+    margin: 0px;
+    font-family: 'Bukhari', 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
-.content{
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
+.layout {
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid:
+      "header" 0.1fr
+      "main" 1fr
+      "footer" 0.1fr
+      / 1fr;
 }
 
-.imgArrow{
-    width: 300px;
-    height: 300px;
-}
-
-/* --- Nav bar --- */
-#nav{
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 155px;
-    height: 105vh;
-    background-color: #FF9114;
+.header {
+    grid-area: header;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
- }
-
- .logoNav{
-    margin-top: 20px;
- }
-
-
-/* --- BODY --- */
-
-body{
-    margin-top: 0px;
-    margin-left: 0px;
-    font-family: 'Irish Grover', 'Courier New', Courier, monospace;
+    align-items: center;
     background-color: #91ED58;
 }
 
-h1{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
+.logo{
+    width: 50%;
+    height: 100%;
+}
+
+
+.main {
+    grid-area: main;
+    background-color: #91ED58;
 }
 
 h2{
-    text-align: left;
-    font-size: 40px;
-    font-weight: bold;
+    text-align: center;
 }
 
 p{
-    text-align: right;
-    font-size: 20px;
-    font-weight: bold;
+    text-align: center;
 }
 
-.text{
-    text-align: left;
-    font-size: 30px;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #FF9114;
-}
-
-.form{
-    background-color: #FF9114;
-    border-radius: 15px;
-    width: 330px;
-    height: 410px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.formContainer{
+.footer {
+    grid-area: footer;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #91ED58;
 }
 
-.section{
-    width: 25%;
+.imgFooter{
+    width: 10%;
+    height: 80%;
 }
 
 .formSection{
-    margin-top: 5%;
-    width: 45%;
+    background-color: #FF9114;
+}
+
+.form{
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 input{
-    width: 80%;
-    height: 30px;
-    border-radius: 10px;
-    border: solid white;
-    border-top: 10px;
-    border-bottom: 10px;
+    border: #ffffff;
 }
 
-.input{
-    width: 80%;
-    height: 30px;
-}
-
-.inputName{
-    margin-top: 30px;
-    margin-left: 50px;
-}
-
-.inputButton{
-    text-align: center;
-    width: 50%;
-    height: 40px;
+.btn{
     background-color: #FFFA69;
-    font-size: 20px;
+    font-family: 'Bukhari', 'Courier New', Courier, monospace;
     font-weight: bold;
-    margin-top: 30px;
-    margin-left: 50px;
+    margin-bottom: 10px;
 }

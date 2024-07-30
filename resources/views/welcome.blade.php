@@ -11,80 +11,66 @@
     </head>
     <body>
 
-        <div class="container">
+        <section class="layout">
 
-            <div class="navBar">
-                <div id="nav">
-                    <div class="logoNav">
-                    LOGO
-                    </div>
-
-                </div>
+            <div class="header">
+                <img class="logo" src="{{URL::asset('images/logo.png')}}" alt="Logo">
             </div>
 
-            <div class="content">
-                <div class="information">
-                    <h1>Easy peasy english</h1>
 
-                    <h2>¿Qué es Easy Peasy English?</h2>
+            <div class="main">
+                <h2>¿Qué es Easy peasy english?</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aspernatur voluptatibus molestias magni quaerat
-                        omnis placeat deserunt, magnam quidem unde enim optio consectetur nulla fugiat debitis aut!
-                        Fuga, corporis distinctio!
-                    </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.
+                </p>
 
-                    <h2>Cursos disponibles</h2>
+                <h2>Cursos disponibles:</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aspernatur voluptatibus molestias magni quaerat
-                        omnis placeat deserunt, magnam quidem unde enim optio consectetur nulla fugiat debitis aut!
-                        Fuga, corporis distinctio!
-                    </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.
+                </p>
+
+                <h2>Inscríbete aquí</h2>
+
+                <div class="formSection">
+
+                    <form class="form">
+                      <label for="name">Nombre</label>
+                      <input type="text">
+                      <br>
+                      <label for="surname">Apellido</label>
+                      <input type="text">
+                      <br>
+                      <label for="email">Email</label>
+                      <input type="email">
+                      <br>
+                      <label for="course">Seleccione curso</label>
+                      <select name="course" id="course">
+                        <option value="course1">Curso 1</option>
+                        <option value="course2">Curso 2</option>
+                      </select>
+                      <br>
+                    <input type="submit" class="btn" value="Inscribirse">
+                    </form>
+
                 </div>
-
-
-
-                <div class="formContainer">
-                    <div class="section">
-                        <p class="text">Inscribete aquí</p>
-                        <img class="imgArrow" src="{{URL::asset('images/flecha.png')}}" alt="imagen de flecha">
-                    </div>
-
-                    <div class="formSection">
-
-                        <form action="" method="post" class="form">
-                            <div class="inputName">
-                                <label for="name">Nombre</label>
-                                <br>
-                                <input type="text" id="name" placeholder="Ingrese su nombre" >
-
-                                <label for="surname">Apellidos</label>
-                                <br>
-                                <input type="text" id="surname" placeholder="Ingrese sus apellidos" >
-
-                                <label for="email">Email</label>
-                                <br>
-                                <input type="email" id="email" placeholder="Ingrese su email" >
-
-                                <label for="course">Seleccione curso</label>
-                                <br>
-                                <select name="course" id="course" class="input">
-                                    <option value="course1">Curso 1</option>
-                                    <option value="course2">Curso 2</option>
-                                </select>
-
-
-                                <div>
-                                    <input type="submit" value="Inscribirse" class="inputButton">
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
-                <div>
 
             </div>
 
 
-        </div>
+            <div class="footer">
+                <img class="imgFooter" src="{{URL::asset('images/insta.png')}}" alt="Instagram">
+            </div>
+
+
+          </section>
+
     </body>
 </html>
