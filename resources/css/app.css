@@ -1,5 +1,5 @@
 /*
-    Fuentes: bukhari script y bebas nueu
+    Font: bukhari script y bebas nueu
 */
 @font-face {
     font-family: 'Bukhari';
@@ -7,6 +7,13 @@
     font-style: normal;
     font-weight: normal;
 }
+
+/* COLORS:
+    Verde pastel: #DFF0D8
+    Amarillo pastel: #FFF9DB
+    Durazno claro: #FFE5B4
+*/
+
 body{
     margin: 0px;
     font-family: 'Bukhari', 'Courier New', Courier, monospace;
@@ -27,11 +34,10 @@ body{
 
 .header {
     grid-area: header;
-    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #91ED58;
+    background-color: #DFF0D8;
 }
 
 .logo{
@@ -42,7 +48,7 @@ body{
 
 .main {
     grid-area: main;
-    background-color: #91ED58;
+    background-color: #DFF0D8;
 }
 
 h2{
@@ -58,7 +64,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #91ED58;
+    background-color: #DFF0D8;
 }
 
 .imgFooter{
@@ -67,7 +73,7 @@ p{
 }
 
 .formSection{
-    background-color: #FF9114;
+    background-color: #FFE5B4;
 }
 
 .form{
@@ -83,8 +89,50 @@ input{
 }
 
 .btn{
-    background-color: #FFFA69;
+    background-color: #FFF9DB;
     font-family: 'Bukhari', 'Courier New', Courier, monospace;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+/*------- TABLET ----------- */
+@media only screen and (min-width: 768px)  {
+    .formSection{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .btn{
+        height: 30px;
+        border: solid black 2px;
+    }
+
+    .imgFooter{
+        width: 8%;
+        height: 73%;
+    }
+}
+
+
+/*------- PC ----------- */
+@media only screen and (min-width: 1024px){
+    .header {
+        height: 200px;
+    }
+
+    .logo{
+        width: 20%;
+        height: 80%;
+    }
+
+    .formSection{
+        width: 20%;
+        margin-left: 40%;
+    }
+
+    .imgFooter{
+        width: 3%;
+        height: 50%;
+    }
+
 }
